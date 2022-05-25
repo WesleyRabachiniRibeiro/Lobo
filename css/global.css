@@ -19,6 +19,7 @@ ul{
 
 img{
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -54,8 +55,8 @@ a{
 
 @media (max-width:800px) {
     .container{
-        grid-template-columns: 1fr;
-        padding: 60px 20px;
+        grid-template-columns: 1fr !important;
+        padding: 60px 20px !important;
         gap: 40px;
     }
     .subtitle{

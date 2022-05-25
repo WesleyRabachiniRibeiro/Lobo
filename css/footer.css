@@ -1,0 +1,35 @@
+.footer{
+    background-color: #000000;
+}
+
+.footer .container{
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20px 60px 20px;
+    align-items: center;
+}
+
+.footer_text{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+}
+
+.footer_contact li{
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.footer_copy{
+    font-size: 1.125rem;
+    color: #8f8f8f;
+    grid-column: 1/-1;
+}
+
+@media (max-width:800px){
+    .footer_contact li{
+        font-size: 1.5rem;
+    }
+}
