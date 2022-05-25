@@ -1,0 +1,145 @@
+.formation{
+    background-color: #141414;
+    color: #fff;
+}
+
+.formation .container{
+    padding: 120px 20px;
+}
+
+.formation .container::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+}
+
+.formation .subtitle{
+    color: #000;
+    max-width: 5ch;
+}
+
+.formation_text{
+    color: #a3a3a3;
+}
+
+.formation_text strong{
+    color: #fff;
+}
+
+.university_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.university{
+    flex: 1;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.university_type{
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 10px;
+}
+
+.university_course{
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.university_course::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd04);
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+.university_name{
+    font-size: 1.125rem;
+    color: #a3a3a3;
+}
+
+.courses{
+    margin-bottom: 60px;
+}
+
+.extra_formation h3{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.extra_formation h3::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -4px;
+    left: -36px;
+}
+
+.courses h3::before{
+    background: url('../img/cursos.svg') no-repeat center center;
+}
+
+.language h3::before{
+    background: url('../img/idiomas.svg') no-repeat center center;
+
+}
+
+.extra_formation li{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.extra_formation span{
+    color: #8f8f8f;
+}
+
+.courses li {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 800px) {
+    .formation{
+        grid-template-columns: 1fr;
+    }
+
+    .formation .subtitle{
+        color: #fff;
+    }
+
+    .formation_text{
+        font-size: 1.25rem;
+    }
+    .extra_formation h3::before{
+        position: initial;
+        margin-bottom: 10px;
+    }
+}

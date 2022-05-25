@@ -3,10 +3,6 @@
 }
 
 .experience_text{
-    font-size: 1.5rem;
-    line-height: 1.33;
-    margin-bottom: 60px;
-    max-width: 40ch;
     color: #525252;
 }
 
@@ -74,10 +70,6 @@
 }
 
 @media (max-width: 800px) {
-    .experience{
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
     .experience .subtitle{
         color: #141414;
     }
